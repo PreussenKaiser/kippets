@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Fact</Title>
+            <Description>Synchronous Xunit fact test method.</Description>
+            <Author>PKaiser</Author>
+        </Header>
+        <Snippet>
+            <Code Language="CSharp">
+                <![CDATA[
+                    [Fact]
+                    public void $MethodName$()
+                    {
+                        // Arrange
+                        $Arrange$
+
+                        // Act
+                        $Act$
+
+                        // Assert
+                        $Assert$
+                    }
+                ]]>
+            </Code>
+            <Declarations>
+                <Literal>
+                    <ID>MethodName</ID>
+                    <ToolTip>Test name.</ToolTip>
+                    <Default>Asserts_Something</Default>
+                </Literal>
+                <Literal>
+                    <ID>Arrange</ID>
+                    <ToolTip>Test arrangement.</ToolTip>
+                    <Default></Default>
+                </Literal>
+                <Literal>
+                    <ID>Act</ID>
+                    <ToolTip>Test action.</ToolTip>
+                    <Default></Default>
+                </Literal>
+                <Literal>
+                    <ID>Assert</ID>
+                    <ToolTip>Test assertions.</ToolTip>
+                    <Default>Assert.Fail("Not implemented.");</Default>
+                </Literal>
+            </Declarations>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
